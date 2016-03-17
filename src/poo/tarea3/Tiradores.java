@@ -10,17 +10,16 @@ package poo.tarea3;
  * @author carlos
  */
 public class Tiradores extends Campeones {
-   
-    public void getRango(){
-        this.rango=rango;
-}
+
+    protected boolean rangoMayorA500 = true;
+
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos(); //To change body of generated methods, choose Tools | Templates.
+        getRango();
     }
 
-    
-   
-
-
-   
-
-    
-
+    public void getRango() {
+        System.out.println("Rango es mayor a 500 = "+this.rangoMayorA500);
+    }
+}

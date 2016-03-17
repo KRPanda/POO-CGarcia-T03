@@ -14,14 +14,18 @@ public class Asesinos extends Campeones {
     protected String dash;
     protected String amplificadorDeDaño;
 
-    public void getDash() {
-        this.dash = dash;
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos(); //To change body of generated methods, choose Tools | Templates.
+        getDash();
+        getBuff();
+    }
 
+    public void getDash() {
+        System.out.println("El dash es: "+this.dash);
     }
 
     public void getBuff() {
-        this.amplificadorDeDaño = amplificadorDeDaño;
-
-    }
+        System.out.println("Su buff es: "+this.amplificadorDeDaño);    }
 
 }

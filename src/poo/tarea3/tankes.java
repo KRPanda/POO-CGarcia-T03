@@ -10,19 +10,27 @@ package poo.tarea3;
  * @author carlos
  */
 public class tankes extends Campeones {
+
     protected String crowdControl;
     protected String escudos;
     protected String curacion;
-    
-    public void getCC(){
-        this.crowdControl=crowdControl;
+
+    @Override
+    public void mostrarDatos() {
+        super.mostrarDatos(); //To change body of generated methods, choose Tools | Templates.
+        getCC();
+        getEscudos();
+        getCuracion();
     }
-    
-    public void getescudos(){
-        this.escudos=escudos;
+
+    public void getCC() {
+        System.out.println("Su CrowdControl es "+this.crowdControl);
     }
-    
-    public void getCuracion(){
-        this.curacion=curacion;
+
+    public void getEscudos() {
+        System.out.println("Su escudo es "+this.escudos);    }
+
+    public void getCuracion() {
+        System.out.println("Su curacion es "+this.curacion);
     }
 }

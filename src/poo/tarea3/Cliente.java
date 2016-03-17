@@ -12,7 +12,9 @@ package poo.tarea3;
 public interface Cliente {
     
     public void muestraRol();
-    public void muestraCampeones(); 
-
+    public void muestraNombre(); 
+    public void mostrarP();
+    public void mostrarH();
+    public void mostrarTipoDeDaño();
    
 }
